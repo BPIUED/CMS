@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>左边导航</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/request.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+	<script type="text/javascript" src="js/kissy-min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".menu-item a").each(function(){
+				var childList=$(this).next(".child");
+				$(this).click(function(){
+					if(childList.attr("tagName")=="DIV"){
+						childList.toggle(500);
+						return false;
+					}
+				});
+			});
+		});
+	</script>
+</head>
+
+<body class="left-page">
+<div id="nav">
+			<div class="logo"><a href="" title=""><img src="images/bpicmslogo.jpg" alt="" /></a></div>
+	 		<div class="menu-container">
+	 			 <div id="J_CurrentBG" class="current-bg" style="width: 256px; top: 27px; display: block;">
+		 			<div class="current-label"></div>
+		 		</div>
+	 			<div class="menu-nav_menu-container">
+					<ul id="menu-nav_menu" class="menu">
+						<li class="menu-item current-menu-item">
+							<a href="http://www.baidu.com" title="个人资料">个人资料</a>
+						</li>	
+						<li class="menu-item">
+							<a href="" title="会员注册统计">会员注册统计</a>
+							<div class="child">
+								<a href="11111">第一个</a>
+								<a href="">第二个</a>
+								<a href="">第三个</a>
+								<a href="">第四个</a>
+							</div>
+						</li>
+						<li class="menu-item">
+							<a href=""  title="内容统计">内容统计</a>
+							<div class="child">
+								<a href="">第一个</a>
+								<a href="">第二个</a>
+								<a href="">第三个</a>
+								<a href="">第四个</a>
+							</div>
+						</li>
+						<li class="menu-item">
+							<a href="" title="评论统计">评论统计</a>
+							<div class="child">
+								<a href="">第一个</a>
+								<a href="">第二个</a>
+								<a href="">第三个</a>
+								<a href="">第四个</a>
+							</div>
+						</li>
+						<li class="menu-item">
+							<a href="" title="留言统计" href="">留言统计</a>
+						</li>	
+						<li class="menu-item">
+							<a href="" title="PV统计">PV统计</a>
+						</li>
+						<li class="menu-item">
+							<a href="" title="独立IP统计">独立IP统计</a>
+						</li>
+						<li class="menu-item">
+							<a href="" title="独立访客统计">独立访客统计</a>
+						</li>
+						<li class="menu-item">
+							<a href="" title="人均浏览次数统计" href="">人均浏览次数统计</a>
+						</li>	
+						<li class="menu-item">
+							<a href="" title="来访网站">来访网站</a>
+						</li>
+						<li class="menu-item">
+							<a href="" title="来访关键字">来访关键字</a>
+						</li>
+						<li class="menu-item">
+							<a href="" title="受访页面">受访页面</a>
+						</li>
+					</ul>
+				</div>	 		
+			</div>
+
+			<div class="sidebar-search">	
+			<form method="get" id="searchform" class="search-form" action="">
+				<button type="submit" id="J_Search" class="btn-search" title="Search"></button>
+				<input type="text" maxlength="30" name="s" title="Type Keyword" id="J_SearchInput" class="search-input">
+			</form>
+			</div>
+		</div>
+</body>
+</html>

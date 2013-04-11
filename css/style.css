@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {border:0px;}
+ul {margin:0px;padding:0px;list-style: none;}
+* {margin:0px;padding:0px;word-wrap:break-word;list-style:none;}
+a {outline:none;text-decoration: none; color:#606566;}
+a, a:visited { 
+text-decoration: none;
+}
+
+a:hover, a:active { 
+color:#ff5f3e;
+}
+a:hover {color: #ff5f3e;}
+:focus {outline: 0;}
+.clear-fix {clear: left;}
+::-moz-selection {background: #FF5F3E; color: #ffffff;}
+::selection {background: #FF5F3E; color: #ffffff;}     
+
+             
+#nav {width: 249px; height:100%; color: #606566;position: fixed;top: 0;left:7px;z-index: 0;background-color: #fff;padding-bottom: 36px; float:left; position:relative;}
+.nav-1 {position: absolute !important;}
+#content {min-height: 556px;display: inline-block;padding:0px; position:relative; float:left;}
+
+.logo {width: 249px;height: 117px;overflow: hidden;}
+
+.logo a{background:#2578be;display:block;}
+.current-bg {width: 256px;height:47px;background-color: #f8f8f8;position: absolute;z-index: -1;left: -7px;display: none;}
+.current-label {width: 7px;height:100%;background-color: #2578be;float: left;}
+
+.menu-container {padding:27px 0 0 30px;position: relative;}
+.menu-container .menu {width:214px;}
+.menu-container .menu-item, .menu-container .children .cat-item {color:#606566;width:100%;display:inline-block;border-top: 1px solid #f8f8f8;}
+.menu-container li:first-child {border-top: none;}
+.menu-container li{font-size:14px;}
+.menu-container .cat-item {height:auto;border-top:1px solid #f8f8f8;}
+.menu-container a{display:block;height:47px;line-height:47px;cursor:pointer;}
+.menu-container .children a {font-size: 15px;padding-left: 38px;width: 181px;color:#000;}
+.menu-container a:hover, .menu-container .current-menu-item, .menu-container .current-cat {color: #2578be !important;}
+.sidebar-search {padding: 20px 0 0 30px;}
+.search-form {position: relative;display: inline-block;}
+.search-form .search-input {width: 134px;height: 20px;border: none;border-radius: 2px;padding: 2px 2px 2px 20px;color: #606566;line-height: 18px; background: #f3f3f3 url(../images/ued-sprites.png) 5px -100px no-repeat;-webkit-transition: background-color 0.3s linear;-moz-transition: background-color 0.3s linear;-o-transition: background-color 0.3s linear;}
+.search-form .btn-search {border: none;position: absolute;width: 20px;height: 20px;display: inline-block;left: 1px;top: 1px;cursor: pointer;background: none;}
+.search-form .search-input:focus, .search-form:hover .search-input {color: #ffffff !important;background: #2578be url(images/ued-sprites.png) 5px -118px no-repeat;}
+
+.right-topmenu{width:100%; height:58px; background:#565656; position:relative;}
+.btn-bar {height: 58px; border-bottom: 1px dotted #bababa;}
+.btn-bar .admin{height:58px; line-height:58px; position:relative; width:250px; float:left;}
+.btn-bar .admin .avatar{border-radius: 29px; 
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+}
+.btn-bar .admin .avatar:hover {border-radius: 0px;}
+.btn-bar .admin .mark{height:58px; width:58px; position:absolute; left:0px; top:0px; background:url(../images/admin_mark.png)}
+.btn-bar .admin p{height:58px; line-height:58px; position:absolute; left:58px; top:0px; font-size:14px; padding:0px 10px;}
+
+.btn-bar .left_nav{ height:58px; line-height:58px; float:left; font-size:14px;}
+.btn-bar .left_nav li{float:left; padding:0px 10px;}
+.btn-bar .left_nav li a{color:#000;}
+.btn-bar .left_nav li a:hover{color:#2578be; 
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;}
+
+
+
+
+.top-menu {height: 58px; position:relative; width:100%; background:#04405c; position:relative; min-width:960px;}
+.top-menu  li{float:left; height:46px; line-height:46px; padding:6px; font-size:15px; font-weight:bold; color:#fff; }
+.top-menu  li a{height:46px; line-height:46px; float:left; padding:0px 20px; color:#fff;}
+.top-menu  li a.active{color:#000; background:#fff;}
+.top-menu  li a:hover{color:#fff; background:#033248; padding-left:25px;
+-webkit-transition: all 0.5s ease-out; 
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out; 
+}
+
+.top-menu  .fu-menu{position:absolute; right:0px; top:0px;}
+
+.top-menu  .fu-menu li{float:left; height:58px; line-height:58px; padding:0px; font-size:15px; font-weight:bold; color:#fff; }
+.top-menu  .fu-menu li.fu-menu01 a{height:58px; line-height:58px; float:left; padding:0px 20px; color:#fff; background:#a17f25;}
+.top-menu  .fu-menu li.fu-menu02 a{height:58px; line-height:58px; float:left; padding:0px 20px; color:#fff; background:#388d12;}
+
+
+/* 框架 */
+#left{width:14%;}
+#right{width:87%;margin-left:-20px;}
+
+
+.child{padding-left:10px;display:none;}
+.child a{padding:5px;float:none;display:block;line-height:20px;height:20px;font-size:12px;background:url(../images/dian.jpg) left center no-repeat;padding-left:10px;}
+
+
+
+
